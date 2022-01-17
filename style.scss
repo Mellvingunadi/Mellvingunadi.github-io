@@ -1,0 +1,230 @@
+.bg-color{
+    background-color: dodgerblue;
+}
+.mainFont{
+    font-family: Helventica;
+}
+.fontColor {
+    color: white;
+}
+.fontSize{
+    font-size: 80px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h1{
+        font-family: 'montserrat', monospace;
+        font-size: 20pt;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+        li{
+            list-style: none;
+            justify-content: space-around;
+            font-size: 13pt;
+        }
+      
+    }
+    .nav-links{
+        text-decoration: none;
+        width: 12px;
+        
+    }
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    color:blue;
+    font-size: 40pt;
+    border: 2px white solid;
+    border-radius: 8px;
+    background-color: white;
+}
+
+header{
+    margin: 0em;
+    padding: 180px 50px;
+    background-color: dodgerblue;
+    text-align: center;
+}
+
+.mainContainer{
+    display: flex;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 150px 50px;
+    align-items: center;
+    justify-content: space-around;
+
+    h2{
+        float: left;
+        font-size: 38pt;
+        justify-items: center;
+        font-family: helvetica,Arial;
+    }
+
+    .image-container{
+        background-color: white;
+        padding: 120px 100px;
+        width: 90%;
+        display: flex;
+        border: 2px solid dodgerblue;
+        border-radius: 8px;
+        justify-content: space-around;
+
+        img{
+            width: 40%;
+            margin: 0.5em;
+        }
+        //customize like image one
+        .img2{
+            border-radius: 8px;
+        }
+        .img3{
+            border-radius: 8px;
+        }
+    }
+}
+.sideContainer{
+    margin: 0;
+    padding: 125px 40px;
+    background-color: dodgerblue;
+
+    h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 45pt;
+        font-family: 'Montserrat';
+        color: white;
+        font-style: bold;
+    }
+}
+.container-sidePicture{
+    padding: 150px 50px;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    
+   img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+   }
+
+}
+footer{
+    padding: 80px 50px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    span{
+        font-size: 23pt;
+        color: white;
+        font-family: 'Helvetica', sans-serif ;
+    }
+}
+//image Transittion
+img:hover{
+    transform: scale(1.05);
+    transition: transform 500ms ease;
+}
+$breakpoint-screen:500px;
+@media(max-width:$breakpoint-screen){
+    //navbar
+    nav{
+        h1{
+            font-size: 12pt;
+            float: left;
+       }
+       ul{
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+        li{
+            list-style: none;
+            justify-content: space-around;
+            font-size: 7pt;
+        }
+        .nav-links{
+            width: 10em;
+            display: flex;
+        }
+      
+        }
+    }
+
+    .headers{
+        p{
+            font-size:22pt;
+        }
+    }
+.mainContainer{
+        h2{
+            font-size: 18pt;
+            
+        }
+        .image-container{
+            padding: 80px 50px;
+            width: 90%;
+            margin:10px;
+
+            img{
+                width: 70%;
+                margin: 0.5em;
+            }
+        }
+       
+    }
+
+    .sideContainer{
+    
+        h3{
+        font-size: 27pt;
+        justify-content: center;
+        }
+    }
+    .container-sidePicture{
+        //change image recentimage container
+        padding: 90px 50px;
+        img{
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+           }
+    }
+    footer{
+        padding: 50px 25px;
+        background-color: dodgerblue;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        span{
+            font-size: 15pt;
+            color: white;
+            font-family: 'Helvetica', sans-serif ;
+        }
+    }
+}
+
+    
+
+
+  
